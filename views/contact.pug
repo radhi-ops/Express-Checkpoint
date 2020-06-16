@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      link(rel="stylesheet" href="/style.css")
+      title= title
+   body
+      include ./nav-link.pug
+      br
+      br
+      h1 Contact us
+      p
+        input.w3-input.w3-padding-16(type='text' placeholder='Name' required='' name='Name')
+      p
+        input.w3-input.w3-padding-16(type='email' placeholder='Email' required='' name='Email')
+      p
+        input.w3-input.w3-padding-16(type='text' placeholder='Request' required='' name='Message')
+      p
+        button.w3-button.w3-light-grey.w3-section(type='submit') SEND MESSAGE
+      include ./information.pug
